@@ -23,7 +23,7 @@ const sliced = arguments.slice(2);
 // console.log(sliced);
 // console.log(process.argv);
 
-const hardcodedArr = [ '5', '10', '15', '3.14', '-100' ];
+// const hardcodedArr = [ '5', '10', '15', '3.14', '-100' ];
 
 // prints out the sum of them
 
@@ -31,8 +31,8 @@ const hardcodedArr = [ '5', '10', '15', '3.14', '-100' ];
 let runningTotal = 0;
 
 // loop through the array: c-style, forEach, for..of, for..in
-for (let i = 0; i < hardcodedArr.length; i++) {
-  const element = hardcodedArr[i]; // '15'
+for (let i = 0; i < sliced.length; i++) {
+  const element = sliced[i]; // '15'
 
   // casting the element to a number
   const number = Number(element); // 15
