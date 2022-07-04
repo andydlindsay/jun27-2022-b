@@ -6,6 +6,7 @@
  *        - The formula is:
  *
  *          stdev = sqrt(sum((x - populationMean)^2)/numberOfValues)
+ *          area = length * width
  *
  *        - you are allowed to look at Wikipedia's example calculation to help you understand the formula
  *        - Keep in mind, we are using 'Population Standard Deviation' as opposed to 'Sample Standard Deviation' for this test
@@ -28,8 +29,48 @@ const round = function(number) {
   return Math.round(number * 100) / 100;
 };
 
-const stdev = function(arr) {
+const q0funcs = require('./q0');
+const sum = q0funcs.sum;
 
+const stdev = function(arr) {
+  // sqrt(sum((num - populationMean)^2)/numberOfValues)
+
+  const numberOfValues = arr.length;  
+  const populationMean = sum(arr) / numberOfValues;
+
+  // const differences = [];
+  // for (const num of arr) {
+  //   const difference = num - populationMean;
+  //   differences.push(difference);
+  // }
+
+  const differences = arr.map((num) => {
+    return num - populationMean;
+  });
+
+  // console.log(arr);
+  // console.log(populationMean);
+  // console.log(differences);
+
+  // const squares = [];
+  // for (const difference of differences) {
+  //   const square = Math.pow(difference, 2);
+  //   squares.push(square);
+  // }
+
+  const squares = differences.map((difference) => {
+    return Math.pow(difference, 2);
+  });
+
+  // console.log(squares);
+
+  const squareSum = sum(squares);
+
+  const squareAvg = squareSum / numberOfValues;
+
+  const answer = Math.sqrt(squareAvg);
+
+  return round(answer);
 };
 
 // Don't change below:
