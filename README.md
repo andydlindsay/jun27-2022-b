@@ -4,3 +4,4 @@
 * [W01D04 - Callbacks!](/w01d04)
 * [BREAKOUT - W1 Exam Review](/breakout-w1-exam)
 * [W02D02 - Asynchronous Control Flow](/w02d02)
+* [W03D01 - Web Servers 101](/w03d01)
