@@ -14,9 +14,9 @@ app.use((req, res, next) => {
 
   next();
 });
+
 // const morganMiddleware = morgan('dev');
 // app.use(morganMiddleware);
-
 app.use(morgan('dev'));
 
 // GET /
