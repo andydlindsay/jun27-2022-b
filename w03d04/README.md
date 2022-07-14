@@ -41,8 +41,7 @@
   * Do this by default
   * Only store a way to uniquely identify the user (eg. `user_id` or `username` can be used to look up values in a database or object)
 
-### REST (Representational State Transfer)
-
+### REST (REpresentational State Transfer)
 * REST means that the path that we are going to should represent the data being transferred
 * An API that uses the REST convention is said to be RESTful
 * RESTful routes look like:
