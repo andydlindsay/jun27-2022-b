@@ -7,3 +7,4 @@
 * [W03D01 - Web Servers 101](/w03d01)
 * [BREAKOUT - W2 Exam Review](/breakout-w2-exam)
 * [W03D04 - Security & Real World HTTP Servers](/w03d04)
+* [W07D02 - Component-Based UI w/ React](/w07d02)
