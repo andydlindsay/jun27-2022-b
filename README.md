@@ -8,3 +8,5 @@
 * [BREAKOUT - W2 Exam Review](/breakout-w2-exam)
 * [W03D04 - Security & Real World HTTP Servers](/w03d04)
 * [W07D02 - Component-Based UI w/ React](/w07d02)
+* [W07D04 - Data Fetching & Other Side Effects](/w07d04)
+* [W07D05 - Custom Hooks](/w07d05)
