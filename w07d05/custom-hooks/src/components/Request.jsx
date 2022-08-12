@@ -3,7 +3,7 @@ import useRequest from "../hooks/useRequest";
 const Request = () => {
   const url = 'http://my-json-server.typicode.com/andydlindsay/chef-andy/recipes';
 
-  const {data, loading} = useRequest('/recipes');
+  const {data, loading} = useRequest(url);
 
   return (
     <div>
