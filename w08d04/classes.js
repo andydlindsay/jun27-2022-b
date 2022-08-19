@@ -32,9 +32,9 @@ class Prism extends Rectangle {
     return 'this is the area() from inside Prism';
   }
 
-  // componentDidMount() {
+  componentDidMount() {
     // wheee! the component mounted!!
-  // }
+  }
 }
 
 const prism = new Prism(3, 4, 5);
